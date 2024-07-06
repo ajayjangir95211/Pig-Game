@@ -1,0 +1,137 @@
+/* 
+0.25,0.5,0.75,1.25,2.0,3.25,5.25,8.5 ,13.75,22.25
+
+0.5 ,1.0,1.5 ,2.5 ,4.0,6.5 ,10.5,17.0,27.5 ,44.5
+ 
+1   ,2  ,3   ,5   ,8  ,13  ,21  ,34  ,55   ,89
+
+*/
+
+html {
+  font-size: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  font-family: nunito, sans-serif;
+  font-size: 3rem;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.portrait-message {
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.container {
+  width: 75%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 3rem;
+  border: solid 0.5rem #fff;
+  overflow: hidden;
+  position: relative;
+  background-color: #bd7a94;
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.player {
+  padding: 13% 21%;
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+  transition: all 0.5s;
+}
+
+.totalScore {
+  color: #c3446c;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  font-size: 8rem;
+}
+
+.current {
+  background-color: #c3446c;
+  font-size: 5rem;
+  color: #fff;
+  align-self: center;
+  padding: 5% 8%;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.controls {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5% 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+}
+
+.dice-image {
+  width: 13rem;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 3.25rem;
+  padding: 2rem 3rem;
+  border-radius: 256rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.winner {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.loser {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 5px;
+  }
+}

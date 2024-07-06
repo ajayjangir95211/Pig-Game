@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link
+      rel="shortcut icon"
+      href="./images/icons8-game-96.png"
+      type="image/png"
+    />
+    <link rel="apple-touch-icon" href="./images/icons8-game-96.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="portrait-message inactive">
+      Please rotate your device to landscape mode for the best experience.
+    </div>
+    <div class="container">
+      <div class="player p-1">
+        <div class="details">
+          <p class="name">Player 1</p>
+          <p class="totalScore p-1">-</p>
+        </div>
+        <div class="current">
+          <p>Current</p>
+          <p class="currentScore p-1">-</p>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="new-game">🔄 New game</button>
+        <img class="dice-image hidden" src="images/dice-1.png" alt="" />
+        <div class="btn-group">
+          <button class="roll-dice" disabled>🎲 Roll dice</button>
+          <button class="hold" disabled>📥 Hold</button>
+        </div>
+      </div>
+      <div class="player p-2">
+        <div class="details">
+          <p class="name">Player 2</p>
+          <p class="totalScore p-2">-</p>
+        </div>
+        <div class="current">
+          <p>Current</p>
+          <p class="currentScore p-2">-</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
