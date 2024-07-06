@@ -20,7 +20,7 @@ function checkOrientation() {
 
 checkOrientation();
 
-const targetScore = 10;
+const targetScore = 100;
 const newGame = document.querySelector(".new-game");
 const diceImage = document.querySelector(".dice-image");
 const rollDice = document.querySelector(".roll-dice");
@@ -119,6 +119,7 @@ hold.addEventListener("click", () => {
 
 function winner() {
     activePlayer.card.classList.add("winner");
+    activePlayer.currentScore = 'Winner!';
     players[1 - active.value].card.classList.add("loser");
     rollDice.setAttribute("disabled", true);
     hold.setAttribute("disabled", true);
