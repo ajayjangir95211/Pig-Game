@@ -5,6 +5,7 @@
  
 1   ,2  ,3   ,5   ,8  ,13  ,21  ,34  ,55   ,89
 
+144, 233, 377, 610, 987, 1597, 2584
 */
 
 html {
@@ -41,9 +42,9 @@ body {
 }
 
 .container {
-  width: 75%;
+  width: 87.5%;
   text-align: center;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 3rem;
   border: solid 0.5rem #fff;
@@ -131,6 +132,16 @@ button {
 
 .loser {
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (min-width: 610px) {
+  .portrait-message {
+    display: none;
+  }
+
+  .container {
+    display: grid;
+  }
 }
 
 @media (min-width: 1024px) {
